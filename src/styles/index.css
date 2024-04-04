@@ -1,5 +1,6 @@
 body {
-  background-image: url("../assets/background-image.jpg");
+  /* background-image: url("../assets/background-image.jpg"); */
+  background-color: #f8f7f3;
 }
 
 main {
@@ -37,6 +38,8 @@ h2 {
   align-items: center;
 
   margin-bottom: 10px;
+
+  cursor: pointer;
 }
 
 .content_instagram img {
@@ -58,4 +61,24 @@ h3 {
   text-decoration: underline;
 
   margin-top: 40px;
+
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 150px;
+    }
+
+    .decoration {
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
 }
