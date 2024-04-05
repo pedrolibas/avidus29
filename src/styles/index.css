@@ -46,7 +46,7 @@ h2 {
   width: 25px;
 }
 
-.content_instagram p {
+.content_instagram a {
   font-size: 20px;
   color: var(--color-yellow);
   font-weight: 800;
@@ -54,15 +54,19 @@ h2 {
   padding-left: 10px;
 }
 
-h3 {
+button {
   font-size: 4vw;
   font-weight: 900;
   color: var(--color-yellow);
   text-decoration: underline;
 
   margin-top: 40px;
+  
+  padding: 0;
 
   cursor: pointer;
+
+  border: none;
 }
 
 @media (min-width: 768px) {
