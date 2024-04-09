@@ -1,135 +1,172 @@
 body {
+  width: 100vw;
   height: 100vh;
 
   background-color: var(--color-white);
+}
+
+header {
+  width: 100%;
+  height: 50px;
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
+  border-bottom: 1px solid var(--color-yellow);
+
+  background-color: var(--color-white);
+
+  position: fixed;
+  z-index: 10;
+}
+
+.container_header {
+  width: 90%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container_header h1 {
+  color: var(--color-yellow);
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+
+  font-weight: 900;
+}
+
+.container_header button {
+  background-color: transparent;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.container_header button img {
+  width: 30px;
 }
 
 main {
-  width: 100vw;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: var(--color-white);
+}
+
+.line{
+  height: 30px;
+}
+
+.feed {
+  width: 500px;
+
+  margin-top: 40px;
 
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.logo {
-  width: 170px;
-}
+.card {
+  max-width: 470px;
 
-h1 {
-  font-size: 80px;
-  font-weight: 200;
-  color: var(--color-black);
-}
-
-.decoration {
-  width: 80%;
-}
-
-h2 {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--color-yellow);
-
-  margin-bottom: 30px;
-}
-
-p {
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-h3 {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--color-yellow);
-
-  margin-top: 15px;
-}
-
-.content_instagram {
   display: flex;
+  flex-direction: column;
   align-items: center;
 
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
-  cursor: pointer;
+  border-radius: 5px;
+
+  background-color: var(--color-white-2);
 }
 
-.content_instagram img {
-  width: 25px;
+.header_card {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding-left: 10px
 }
 
-.content_instagram a {
-  font-size: 20px;
-  color: var(--color-yellow);
-  font-weight: 800;
+#profile {
+  width: 32px;
 
-  padding-left: 10px;
+  border: 1px solid var(--color-yellow);
+  border-radius: 20px;
 }
 
-#redirection {
-  font-size: 1rem;
+.header_card h2 {
+  font-size: 14px;
   font-weight: 500;
   color: var(--color-yellow);
-  text-decoration: underline;
+}
 
-  margin-top: 20px;
+.buttons_card {
+  width: 100%;
 
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  cursor: pointer;
+  margin: 10px 0;
+}
 
+.content {
+  width: 95%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons_card img {
+  width: 16px;
+}
+
+.heart {
+  background-color: transparent;
+  
   border: none;
-
-  background-color: var(--color-white);
+  
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width: 321px) {
-  #redirection {
-    font-size: 13px;
-  }
+.photo {
+  width: 100%;
 }
 
-@media (min-width: 375px) {
-  #redirection {
-    font-size: 15px;
-  }
+.card p {
+  width: 98%;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-black);
+
+  margin: 0 0 10px 0;
 }
 
-@media (min-width: 425px) {
-  #redirection {
-    font-size: 18px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
+.card strong {
+  font-weight: 700;
+  padding-right: 5px;
 }
 
-@media (min-width: 768px) {
-  main {
-    width: 80vw;
-  }
 
-  h1 {
-    font-size: 150px;
-  }
-
-  .decoration {
-    width: 60%;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-
-  #redirection {
-    font-size: 25px;
+@media (max-width: 520px) {
+  .feed {
+    width: 100%;
   }
 }
