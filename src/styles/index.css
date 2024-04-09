@@ -1,6 +1,11 @@
 body {
-  /* background-image: url("../assets/background-image.jpg"); */
-  background-color: #f8f7f3;
+  height: 100vh;
+
+  background-color: var(--color-white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -12,11 +17,11 @@ main {
 }
 
 .logo {
-  width: 200px;
+  width: 170px;
 }
 
 h1 {
-  font-size: 20vw;
+  font-size: 80px;
   font-weight: 200;
   color: var(--color-black);
 }
@@ -26,11 +31,25 @@ h1 {
 }
 
 h2 {
-  font-size: 4vw;
+  font-size: 18px;
   font-weight: 600;
   color: var(--color-yellow);
 
   margin-bottom: 30px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-yellow);
+
+  margin-top: 15px;
 }
 
 .content_instagram {
@@ -54,35 +73,63 @@ h2 {
   padding-left: 10px;
 }
 
-button {
-  font-size: 4vw;
-  font-weight: 900;
+#redirection {
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--color-yellow);
   text-decoration: underline;
 
-  margin-top: 40px;
-  
+  margin-top: 20px;
+
   padding: 0;
 
   cursor: pointer;
 
   border: none;
+
+  background-color: var(--color-white);
+}
+
+@media (max-width: 321px) {
+  #redirection {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 375px) {
+  #redirection {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 425px) {
+  #redirection {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 768px) {
-    h1 {
-        font-size: 150px;
-    }
+  main {
+    width: 80vw;
+  }
 
-    .decoration {
-        width: 50%;
-    }
+  h1 {
+    font-size: 150px;
+  }
 
-    h2 {
-        font-size: 35px;
-    }
-    
-    h3 {
-        font-size: 30px;
-    }
+  .decoration {
+    width: 60%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  #redirection {
+    font-size: 25px;
+  }
 }
