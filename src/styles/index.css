@@ -52,27 +52,6 @@ h3 {
   margin-top: 15px;
 }
 
-.content_instagram {
-  display: flex;
-  align-items: center;
-
-  margin-bottom: 10px;
-
-  cursor: pointer;
-}
-
-.content_instagram img {
-  width: 25px;
-}
-
-.content_instagram a {
-  font-size: 20px;
-  color: var(--color-yellow);
-  font-weight: 800;
-
-  padding-left: 10px;
-}
-
 #redirection {
   font-size: 1rem;
   font-weight: 500;
