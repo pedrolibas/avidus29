@@ -61,7 +61,7 @@ main {
   background-color: var(--color-white);
 }
 
-.line{
+.line {
   height: 30px;
 }
 
@@ -132,14 +132,14 @@ main {
 }
 
 .buttons_card img {
-  width: 16px;
+  width: 20px;
 }
 
 .heart {
   background-color: transparent;
-  
+
   border: none;
-  
+
   margin: 0;
   padding: 0;
 }
@@ -171,10 +171,6 @@ footer {
   background-color: var(--color-black);
 
   margin-top: 20px;
-}
-
-.content_footer{
-  
 }
 
 .content_footer h3 {
@@ -221,7 +217,7 @@ footer {
   .content_footer h3 {
     font-size: 14px;
   }
-  
+
   .content_footer h4 {
     font-size: 14px;
   }
