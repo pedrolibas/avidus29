@@ -11,6 +11,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   border-bottom: 1px solid var(--color-yellow);
 
@@ -27,6 +28,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin-top: 20px;
 }
 
 .container_header h1 {
@@ -204,6 +207,24 @@ footer {
   font-size: 15px;
   color: var(--color-white-2);
   font-weight: 800;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  max-width: 800px;
+  width: 100%;
+
+  margin-bottom: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color-yellow);
+  font-weight: 300;
+  font-size: 16px;
 }
 
 
