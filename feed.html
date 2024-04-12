@@ -1,60 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/assets/logo-avidus.png" />
 
-  <link rel="icon" href="./src/assets/logo-avidus.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
-    rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/feed.css" />
 
-  <link rel="stylesheet" href="src/styles/reset.css" />
-  <link rel="stylesheet" href="src/styles/feed.css" />
+    <title>Avidus</title>
+  </head>
 
-  <title>Avidus</title>
-</head>
-
-<body>
-  <header>
-    <div class="container_header">
-      <h1>AVIDUS</h1>
-      <button class="exit">
-        <img src="./src/assets/exit-icon.svg" alt="" />
-      </button>
-    </div>
-    <div class="menu">
-      <a href="">13/04</a>
-      <a href="">14/04</a>
-      <a href="">Contatos</a>
-    </div>
-  </header>
-  <div class="line"></div>
-  <main>
-    <ul class="feed">
-    </ul>
-  </main>
-  <footer>
-    <div class="content_footer">
-      <h3>Muito obrigado por terem acessado nosso site!</h3>
-      <h4>Entre em nossas rede sociais e descubra mais sobre nós:</h4>
-      <div class="content_instagram">
-        <img src="./src/assets/instagram-icon.svg" alt="" />
-        <a href="https://www.instagram.com/gjavidus?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          target="_blank">@GJAVIDUS</a>
+  <body>
+    <header>
+      <div class="container_header">
+        <h1>AVIDUS</h1>
+        <button class="exit">
+          <img src="./src/assets/exit-icon.svg" alt="" />
+        </button>
       </div>
-      <div class="content_instagram">
-        <img src="./src/assets/instagram-icon.svg" alt="" />
-        <a href="https://www.instagram.com/paroquiasantanagv?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          target="_blank">@PAROQUIASANTANAGV</a>
+      <div class="menu">
+        <a href="#day1">13/04</a>
+        <a href="#day2">14/04</a>
+        <a href="#contacts">Contatos</a>
       </div>
-    </div>
-  </footer>
-  <script type="module" src="src/scripts/feed.js"></script>
-</body>
-
+    </header>
+    <div class="line"></div>
+    <main>
+      <ul class="feed day1">
+        <h2 id="day1">13/04</h2>
+        <div class="feed_line"></div>
+      </ul>
+      <ul class="feed day2">
+        <h2 id="day2">14/04</h2>
+        <div class="feed_line"></div>
+      </ul>
+    </main>
+    <footer>
+      <div class="content_footer">
+        <h3>Muito obrigado por terem acessado nosso site!</h3>
+        <h4>Entre em nossas rede sociais e descubra mais sobre nós:</h4>
+        <div class="content_instagram" id="contacts">
+          <img src="./src/assets/instagram-icon.svg" alt="" />
+          <a
+            href="https://www.instagram.com/gjavidus?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            >@GJAVIDUS</a
+          >
+        </div>
+        <div class="content_instagram">
+          <img src="./src/assets/instagram-icon.svg" alt="" />
+          <a
+            href="https://www.instagram.com/paroquiasantanagv?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            >@PAROQUIASANTANAGV</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="src/scripts/feed.js"></script>
+  </body>
 </html>

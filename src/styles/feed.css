@@ -6,7 +6,7 @@ body {
 
 header {
   width: 100vw;
-  height: 50px;
+  height: 65px;
 
   display: flex;
   align-items: center;
@@ -28,8 +28,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  margin-top: 20px;
 }
 
 .container_header h1 {
@@ -62,6 +60,8 @@ main {
   flex-direction: column;
 
   background-color: var(--color-white);
+
+  margin-top: 20px;
 }
 
 .line {
@@ -100,7 +100,7 @@ main {
   align-items: center;
   gap: 10px;
 
-  padding-left: 10px
+  padding-left: 10px;
 }
 
 #profile {
@@ -217,16 +217,35 @@ footer {
   max-width: 800px;
   width: 100%;
 
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+
+  cursor: pointer;
 }
 
 .menu a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--color-yellow);
   font-weight: 300;
   font-size: 16px;
 }
 
+.feed h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-yellow);
+  text-align: start;
+
+  width: 90%;
+}
+
+.feed_line {
+  height: 1px;
+  width: 100%;
+
+  background-color: var(--color-yellow);
+
+  margin: 5px 0 0 0;
+}
 
 @media (max-width: 520px) {
   .feed {

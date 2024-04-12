@@ -1,6 +1,7 @@
 class feed {
-  static createCard(urlImage, name, caption, downloadName) {
-    const feed = document.querySelector(".feed");
+  static createCard(urlImage, name, caption, downloadName, day) {
+    const day1 = document.querySelector(".day1");
+    const day2 = document.querySelector(".day2");
     const card = document.createElement("li");
     const cardHeader = document.createElement("div");
     const cardProfile = document.createElement("img");
@@ -51,7 +52,12 @@ class feed {
     card.append(cardButtons);
     card.append(cardCaption);
 
-    feed.append(card);
+    if(day === 1) {
+      day1.append(card);
+    } else if (day === 2) {
+      day2.append(card);
+    }
+
 
     cardHeart.addEventListener("click", (e) => {
       if (
@@ -67,12 +73,23 @@ class feed {
   }
 
   static listCards() {
-    for (let i = 1; i <= 150; i++) {
+    for (let i = 1; i <= 75; i++) {
       feed.createCard(
         `./src/assets/feed/image${i}.jpg`,
         `image${i}`,
         "As palavras de amizade e conforto podem ser curtas e sucintas, mas o seu eco é infidável.",
-        `image${i}`
+        `image${i}`,
+        1
+      );
+    }
+
+    for (let i = 76; i <= 150; i++) {
+      feed.createCard(
+        `./src/assets/feed/image${i}.jpg`,
+        `image${i}`,
+        "As palavras de amizade e conforto podem ser curtas e sucintas, mas o seu eco é infidável.",
+        `image${i}`,
+        2
       );
     }
   }
