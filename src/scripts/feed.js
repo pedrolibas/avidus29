@@ -67,7 +67,7 @@ class feed {
   }
 
   static listCards() {
-    for (let i = 1; i <= 100; i++) {
+    for (let i = 1; i <= 150; i++) {
       feed.createCard(
         `./src/assets/feed/image${i}.jpg`,
         `image${i}`,
