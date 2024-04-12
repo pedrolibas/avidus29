@@ -67,10 +67,10 @@ class feed {
   }
 
   static listCards() {
-    for (let i = 1; i <= 150; i++) {
+    for (let i = 1; i <= 50; i++) {
       feed.createCard(
-        `./src/assets/feed/image${i}.jpeg`,
-        "Santa Teresa de Calcutá",
+        `./src/assets/feed/image${i}.jpg`,
+        `image${i}`,
         "As palavras de amizade e conforto podem ser curtas e sucintas, mas o seu eco é infidável.",
         `image${i}`
       );
