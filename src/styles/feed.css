@@ -21,6 +21,15 @@ header {
   z-index: 10;
 }
 
+header a {
+  text-decoration: none;
+
+  padding: 0;
+  margin: 0;
+
+  cursor: pointer;
+}
+
 .container_header {
   width: 90%;
   height: 100%;
@@ -166,6 +175,13 @@ main {
   padding-right: 5px;
 }
 
+.card span {
+  width: 98%;
+
+  text-align: start;
+  font-size: 12px;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -241,6 +257,7 @@ footer {
 .feed_line {
   height: 1px;
   width: 100%;
+  max-width: 470px;
 
   background-color: var(--color-yellow);
 

@@ -15,6 +15,7 @@ class feed {
     const cardDownload = document.createElement("a");
     const cardIconDownload = document.createElement("img");
     const cardCaption = document.createElement("p");
+    const cardDate = document.createElement("span")
 
     card.classList.add("card");
     cardHeader.classList.add("header_card");
@@ -51,18 +52,10 @@ class feed {
     card.append(cardPhoto);
     card.append(cardButtons);
     card.append(cardCaption);
-
-    if(day === 1) {
-      day1.append(card);
-    } else if (day === 2) {
-      day2.append(card);
-    }
-
+    card.append(cardDate);
 
     cardHeart.addEventListener("click", (e) => {
-      if (
-        cardHeart.children[0].src.split("assets/")[1] === "heart-icon.svg"
-      ) {
+      if (cardHeart.children[0].src.split("assets/")[1] === "heart-icon.svg") {
         cardIconHeart.remove();
         cardHeart.append(cardIconFullHeart);
       } else {
@@ -70,6 +63,14 @@ class feed {
         cardHeart.append(cardIconHeart);
       }
     });
+
+    if (day === 1) {
+      day1.append(card);
+      cardDate.innerText = "13/04/24";
+    } else if (day === 2) {
+      day2.append(card);
+      cardDate.innerText = "14/04/24";
+    }
   }
 
   static listCards() {
@@ -83,15 +84,15 @@ class feed {
       );
     }
 
-    // for (let i = 76; i <= 150; i++) {
-    //   feed.createCard(
-    //     `./src/assets/feed2/image${i}.jpg`,
-    //     `image${i}`,
-    //     "As palavras de amizade e conforto podem ser curtas e sucintas, mas o seu eco é infidável.",
-    //     `image${i}`,
-    //     2
-    //   );
-    // }
+    for (let i = 76; i <= 108; i++) {
+      feed.createCard(
+        `./src/assets/feed2/image${i}.jpeg`,
+        `image${i}`,
+        "As palavras de amizade e conforto podem ser curtas e sucintas, mas o seu eco é infidável.",
+        `image${i}`,
+        2
+      );
+    }
   }
 
   static exit() {
