@@ -73,9 +73,9 @@ class feed {
   }
 
   static listCards() {
-    for (let i = 1; i <= 75; i++) {
+    for (let i = 1; i <= 42; i++) {
       feed.createCard(
-        `./src/assets/feed/image${i}.jpg`,
+        `./src/assets/feed/image${i}.jpeg`,
         `image${i}`,
         "As palavras de amizade e conforto podem ser curtas e sucintas, mas o seu eco é infidável.",
         `image${i}`,
@@ -83,15 +83,15 @@ class feed {
       );
     }
 
-    for (let i = 76; i <= 150; i++) {
-      feed.createCard(
-        `./src/assets/feed/image${i}.jpg`,
-        `image${i}`,
-        "As palavras de amizade e conforto podem ser curtas e sucintas, mas o seu eco é infidável.",
-        `image${i}`,
-        2
-      );
-    }
+    // for (let i = 76; i <= 150; i++) {
+    //   feed.createCard(
+    //     `./src/assets/feed2/image${i}.jpg`,
+    //     `image${i}`,
+    //     "As palavras de amizade e conforto podem ser curtas e sucintas, mas o seu eco é infidável.",
+    //     `image${i}`,
+    //     2
+    //   );
+    // }
   }
 
   static exit() {
