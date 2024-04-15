@@ -84,7 +84,7 @@ class feed {
       );
     }
 
-    for (let i = 76; i <= 108; i++) {
+    for (let i = 1; i <= 108; i++) {
       feed.createCard(
         `./src/assets/feed2/image${i}.jpeg`,
         `image${i}`,
