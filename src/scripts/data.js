@@ -1,4 +1,4 @@
-export const data = [
+const data = [
   {
     name: "Santo Agostinho",
     caption: "A medida do amor é amar sem medida.",
@@ -57,23 +57,28 @@ export const data = [
   },
   {
     name: "Madre Teresa de Calcutá",
-    caption: "É fácil amar os que estão longe. Mas nem sempre é fácil amar os que vivem ao nosso lado.",
+    caption:
+      "É fácil amar os que estão longe. Mas nem sempre é fácil amar os que vivem ao nosso lado.",
   },
   {
     name: "Santa Teresa de Ávila",
-    caption: "Uma prova de que Deus esteja conosco não é o fato de que não venhamos a cair, mas que nos levantemos depois de  cada queda.",
+    caption:
+      "Uma prova de que Deus esteja conosco não é o fato de que não venhamos a cair, mas que nos levantemos depois de  cada queda.",
   },
   {
     name: "Madre Teresa de Calcutá",
-    caption: "É fácil amar os que estão longe. Mas nem sempre é fácil amar os que vivem ao nosso lado",
+    caption:
+      "É fácil amar os que estão longe. Mas nem sempre é fácil amar os que vivem ao nosso lado",
   },
   {
     name: "Santo Agostinho",
-    caption: "Ter fé é assinar uma folha em branco e deixar que Deus nela escreva o que quiser.",
+    caption:
+      "Ter fé é assinar uma folha em branco e deixar que Deus nela escreva o que quiser.",
   },
   {
     name: "Santo Agostinho",
-    caption: "Fizeste-nos, Senhor, para ti, e o nosso coração anda inquieto enquanto não descansar em ti. ",
+    caption:
+      "Fizeste-nos, Senhor, para ti, e o nosso coração anda inquieto enquanto não descansar em ti. ",
   },
   {
     name: "Santo Agostinho",
@@ -84,123 +89,49 @@ export const data = [
     caption: "Senhor fazei de mim um instrumento de vossa paz.",
   },
   {
-    name: "",
-    caption: "",
+    name: "Santa Teresa d'Ávila",
+    caption: "A amizade é a mais verdadeira realização da pessoa",
   },
   {
-    name: "",
-    caption: "",
+    name: "Santa Teresa d'Ávila",
+    caption: "Quem ama, faz sempre comunidade; não fica nunca sozinho",
   },
   {
-    name: "",
-    caption: "",
+    name: "Santa Rita de Cássia",
+    caption:
+      "Nunca é tarde demais para mudar a direção da sua vida. Sempre haverá um nova rota ou uma nova chance de recomeço.",
   },
   {
-    name: "",
-    caption: "",
+    name: "Santo Antônio de Pádua ",
+    caption:
+      "Todas as nossas obras são inúteis em relação à vida eterna, se não forem perfumadas com o bálsamo da caridade.",
   },
   {
-    name: "",
-    caption: "",
+    name: "Tarcísio Custódio",
+    caption:
+      "Se eu Caminhar e errar o Caminho, Deus me mostrará a Direção Certa!",
   },
   {
-    name: "",
-    caption: "",
+    name: "Tarcísio Custódio",
+    caption:
+      "Pense Nisso! O Mundo não precisa de pessoas para julgar, mas sim de pessoas para Orar umas pelas outras!",
   },
   {
-    name: "",
-    caption: "",
+    name: "Tarcísio Custódio",
+    caption: "A certeza para ser feliz é ter Jesus Cristo em seu coração!",
   },
   {
-    name: "",
-    caption: "",
+    name: "Tarcísio Custódio",
+    caption: "Os Momentos são do Mundo, o Pra Sempre é de Deus!",
   },
   {
-    name: "",
-    caption: "",
+    name: "Santo Agostinho",
+    caption: "A amizade se expressa na ajuda mútua e na gratidão.",
   },
   {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
-  },
-  {
-    name: "",
-    caption: "",
+    name: "Santo Agostinho",
+    caption: "A amizade é uma experiência do absoluto de Deus.",
   },
 ];
+
+export default data;

@@ -1,3 +1,5 @@
+import data from "./data.js";
+
 class feed {
   static createCard(urlImage, name, caption, downloadName, day) {
     const day1 = document.querySelector(".day1");
@@ -15,7 +17,7 @@ class feed {
     const cardDownload = document.createElement("a");
     const cardIconDownload = document.createElement("img");
     const cardCaption = document.createElement("p");
-    const cardDate = document.createElement("span")
+    const cardDate = document.createElement("span");
 
     card.classList.add("card");
     cardHeader.classList.add("header_card");
@@ -75,20 +77,24 @@ class feed {
 
   static listCards() {
     for (let i = 1; i <= 72; i++) {
+      const random =
+        Math.floor(Math.random() * (data.length - 1 - 0 + 1)) + 0;
       feed.createCard(
         `./src/assets/feed/image${i}.jpeg`,
-        `image${i}`,
-        "As palavras de amizade e conforto podem ser curtas e sucintas, mas o seu eco é infidável.",
+        data[random].name,
+        data[random].caption,
         `image${i}`,
         1
       );
     }
 
     for (let i = 1; i <= 108; i++) {
+      const random =
+        Math.floor(Math.random() * (data.length - 1 - 0 + 1)) + 0;
       feed.createCard(
         `./src/assets/feed2/image${i}.jpeg`,
-        `image${i}`,
-        "As palavras de amizade e conforto podem ser curtas e sucintas, mas o seu eco é infidável.",
+        data[random].name,
+        data[random].caption,
         `image${i}`,
         2
       );
